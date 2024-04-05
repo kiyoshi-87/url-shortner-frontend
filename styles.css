@@ -57,6 +57,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    overflow: hidden;
 }
 
 body, h1, h2, p, input, button {
@@ -127,6 +128,7 @@ header h1 {
 }
 
 .label {
+    margin-top: 20vh;
 	padding: 10px;
 	font-size: 18px;
 	color: #fff;
@@ -193,7 +195,7 @@ button:hover {
 	content: "Copied";
 	position: absolute;
 	top: -45px;
-	right: 0px;
+	right: 50px;
 	background: #5c81dc;
 	padding: 8px 10px;
 	border-radius: 20px;
@@ -204,7 +206,7 @@ button:hover {
 	content: "";
 	position: absolute;
 	top: -20px;
-	right: 25px;
+	right: 75px;
 	width: 10px;
 	height: 10px;
 	background: #5c81dc;
@@ -221,5 +223,21 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+.refresh a {
+    text-decoration: underline;
+    
+    color: rgb(215, 226, 173);
+}
+
+.refresh {
+    padding-top: 15%;
+    transition: transform 0.2s ease;
+}
+
+.refresh:hover {
+    text-decoration: underline; 
+    transform: scale(1.1);
 }
 
