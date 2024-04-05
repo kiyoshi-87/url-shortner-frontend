@@ -12,7 +12,7 @@ document.getElementById('urlForm').addEventListener('submit', function(event) {
 });
 
 function shortenUrl(url) {
-    fetch('http://localhost:4000/api/shorten', {
+    fetch('https://xoru.onrender.com/api/shorten', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
