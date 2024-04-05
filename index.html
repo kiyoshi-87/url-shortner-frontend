@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>URL Shortener</h1>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="formContainer">
+            <h2>Shorten Your URLs with Ease</h2>
+            <form id="urlForm">
+                <input type="url" id="urlInput" placeholder="Enter your URL" required>
+                <button type="submit">Shorten URL</button>
+            </form>
+            <div id="loader">
+                <dotlottie-player src="https://lottie.host/8913d196-49d3-4c2b-b622-fb1dc3ab230c/iNwwv5qkM9.json"
+                    background="transparent" speed="1" style="width: 150px; height: 150px;" loop
+                    autoplay></dotlottie-player>
+            </div>
+            <!-- <div id="shortenedUrlContainer">
+                <input type="text" id="shortenedUrl" readonly>
+            </div> -->
+            <div id="shortenedUrlContainer">
+                <div class="label">
+                    This is your shortened URL
+                </div>
+                <div class="copy-text">
+                    <input type="text" id="shortenedUrl" class="text" value="david@stylus.co.za" />
+                    <button><i class="fa fa-clone"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer>
+        <div class="container">
+            <p>© 2024 URL Shortener. All rights reserved.</p>
+        </div>
+    </footer> -->
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+</body>
+
+</html>
